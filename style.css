@@ -1,0 +1,421 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: linear-gradient(to top, #D0D0D0, #DCDCDC, #FFFFFF);
+}
+
+header {
+	display: flex;
+	/*width: 100%;*/
+	max-width: 85%;
+	margin: 2em auto 0em;
+}
+
+
+/*тело сайта*/
+
+.text_menu {
+	font-size: 18pt;
+	display: inline-block;
+    margin-top: 40px;
+	margin-right: 5px;
+	margin-left: 30px;
+}
+
+#a1{
+            background-color: #cd2727
+        }
+
+
+
+/*горизонтальное меню сверху*/
+
+
+.dws-menu {
+	margin: 0;
+	padding: 0;
+}
+
+.dws-menu ul {
+	list-style: none;
+}
+
+.dws-menu ul {
+	display: flex;
+	justify-content: center;
+}
+
+/*текст в панельке*/
+.dws-menu ul li a,ul li span { /*отбираем ссылки и делаем их блочными элементами*/
+	display: block;
+	background: #FFA8AF;
+	padding: 15px 30px 15px 40px;  /*задаем отступы*/
+	font-size: 14px; /*задаем шрифт*/
+	color: black;
+	text-decoration: none; /*убираем подчеркивания*/
+	text-transform: uppercase; /*делаем буквы заглавными*/
+	transition: all 0.3s ease; /*задаем плавность появления этой части кода))*/
+}
+
+.dws-menu ul li {
+	position: relative;
+	border-right: 1px solid #B00000;
+}
+
+.dws-menu ul li:first-child {
+	border-left: 1px solid #B00000;
+}
+
+.dws-menu ul li:last-child {
+	border-right: 1px solid #B00000;
+}
+
+/*делаем красивое анимированное меню*/
+.dws-menu li a:hover,li span:hover {
+	background: #FFD1DC;
+	color: black;
+	box-shadow: 1px 5px 10px -5px black;
+	transition: all 0.3s ease; /*задаем плавность появления этой части кода))*/
+}
+
+
+
+/*sub-menu (то, что "все пункты меню")*/
+
+.dws-menu li ul {
+	position: absolute;
+	min-width: 150px; /*задаем минимальную ширину */
+	display: none;
+}
+
+.dws-menu li ul li {
+	border: 1px solid #FFD1DC;
+
+}
+
+.dws-menu li>ul li a {
+	padding: 10px;
+	text-transform: none;
+	background: #FFA8AF;
+}
+
+.dws-menu li:hover ul {
+	display: block;
+}
+
+
+
+/*создаем голову сайта (точнее редактируем ее)*/
+
+.logo {flex-grow: 0; width: 100px; height: 100px}
+.image {position: relative; width: 100px; height: 100px; border: 3px solid #B00000; border-radius: 10%}
+.image2 {position: relative; width: 50px; height: 50px}
+
+.Brend{
+    flex-grow: 1;
+    display: flex;
+    /*background-color: #AFEEEE;*/
+    align-items: center;
+    justify-content: center;
+}
+
+.Brend span {
+    /*width: 100px;*/
+    height: 100px;
+}
+
+.title {
+	font-style: bold;
+	color: #E32636;
+	text-shadow: 5px 3px 11px #FF9BAA;
+	font-size: 70px;
+	font-family: lobster;
+}
+
+
+
+/*меню для шапки сайта*/
+/*вертикальное меню справа сверху с картинкой*/
+
+.dws-menu2 {
+	margin: 30px;
+	padding: 0px;
+}
+
+.dws-menu2 ul {
+	list-style: none;
+}
+
+.dws-menu2 ul {
+	display: flex;
+	justify-content: center;
+}
+
+.dws-menu2 ul li a, ul li span { /*отбираем ссылки и делаем их блочными элементами*/
+	display: block;
+	background: #FF9BAA;
+	padding: 15px 15px 15px 15px;  /*задаем отступы*/
+	font-size: 14px; /*задаем шрифт*/
+	color: black;
+	text-decoration: none; /*убираем подчеркивания */
+	text-transform: uppercase; /*делаем буквы заглавными*/
+	transition: all 0.3s ease; /*задаем плавность появления этой части кода))*/
+}
+
+.dws-menu2 ul li {
+	position: relative;
+	border: 1px solid #B00000;
+
+}
+
+/*делаем красивое анимированное меню*/
+.dws-menu2 li a:hover, li span:hover {
+	background: #FFD1DC;
+	color: black;
+	box-shadow: 1px 5px 10px -5px black;
+	transition: all 0.3s ease; /*задаем плавность появления этой части кода))*/
+}
+
+
+
+/*sub-menu для меню справа сверху в картинке*/
+
+.dws-menu2 li ul {
+	position: absolute;
+	min-width: 150px; /*задаем минимальную ширину*/
+	display: none;
+	padding: 0px 0px;
+}
+
+.dws-menu2 li ul li {
+	border: 1px solid #B00000;
+
+}
+
+.dws-menu2 li ul li a {
+	padding: 10px;
+	text-transform: none;
+	background: #FF9BAA;
+}
+
+.dws-menu2 li:hover ul {
+	display: block;
+}
+
+
+
+/*подвал*/
+
+footer {
+	display: flex;
+	max-width: 85%;
+	margin: 0em auto 0em;
+	margin-top: 20px;
+	height: 200px;
+}
+
+.container2 {
+    display: flex;
+    width: 85%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 8px 5px;
+    margin: auto;
+}
+
+
+
+/*основное наполнение сайта*/
+
+content {
+	max-width: 85%;
+	margin: 0em auto 0em;
+	display: flex;
+	flex-flow: column;
+    /*align-items: center;*/
+}
+
+.menu {height: 100px; width: 100% ; background-color: black}
+
+.class_content {height: 700px; width: 100%}
+
+.container_post {
+    display: flex;
+    width: 85%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 8px 5px;
+    margin: auto;
+    margin-top: 35px;
+}
+
+.post {
+  width: 800px;
+  height: 800px;
+  margin: 6px;
+  background-color: black;
+}
+
+.post1 {
+  width: 100%;
+  height: 800px;
+  margin: 10px;
+}
+
+.careeer {
+	font-size: 20px;
+	color: black;
+}
+
+.tiiitle {
+	font-size: 35px;
+	font-style: bold;
+	color: #B00000;
+	font-family: lobster;
+}
+
+.teeeeext {
+	font-size: 20px;
+	color: black;
+}
+
+.trtrtrtrtr {
+	font-size: 20px;
+	color: black;
+	margin: 50px;
+}
+
+.rrrrr {
+	font-size: 30px;
+	font-style: bold;
+	color: #B00000;
+	font-family: lobster;
+}
+
+.qqqqq {
+	font-size: 25px;
+	color: black;
+}
+
+.passpoooooortinf {
+	font-size: 23px;
+	color: black;
+	line-height: 2;
+}
+
+
+/*содержание первого поста*/
+
+.text_ps {
+	font-size: 30px; /*задаем шрифт*/
+	color: black;
+	font-weight : bolder;
+}
+
+.text_ps_m {
+	font-size: 20px; /*задаем шрифт*/
+	color: black;
+}
+
+/*полосочка между приветствием и текстом*/
+.mini_pol {
+  width: 150px;
+  height: 2.5px;
+  margin: 10px;
+  background-color: #E32636;
+}
+
+.position_img_post1 {
+	float: right;
+	background: url(../img/position_img_post1.jpg);
+	width: 600px;
+	height: 500px;
+	border: 3px solid #B00000;
+	border-radius: 10%;
+}
+
+.text_ps_mm {
+	font-size: 16px;
+	color: black;
+}
+
+.films {
+	width: 100%;
+	margin-left: 30px;
+	margin-bottom: 60px;
+	font-size: 20px;
+	color: black;
+}
+
+.text_ps_m_1 {
+	font-style: bold;
+	color: #E32636;
+	font-size: 50px;
+	font-family: lobster;
+}
+
+
+
+/*пост 2 - два маленьких квадратика*/
+
+.post2 {
+    width: 45%;
+    height: 500px;
+    margin: 6px;
+    background-color: #FFD1DC;
+    border: 3px solid #B00000;
+	border-radius: 10%;
+}
+
+.text_post_b {
+	font-size: 20px; /*задаем шрифт*/
+	color: black;
+	margin: 0px;
+}
+
+hr {
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    unicode-bidi: isolate;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+
+/*пост 3*/
+
+.post3 {
+    width: 70%;
+    height: 564px;
+    margin: 60px;
+    background: url(../img/post3.jpg);
+    background-size: cover;
+    border: 3px solid #B00000;
+	border-radius: 20px;
+}
+
+.Nice_price {
+    font-size: 30px; /*задаем шрифт*/
+	color: #E32636;
+	font-weight : bolder;
+	margin: 0px;
+	font-family: lobster;
+	text-align: center;
+}
+
+.formaaaa {
+	font-size: 20px;
+	color: black;
+}
+
+.formaaaaaaaaa {
+	font-size: 20px;
+	color: black;
+}
