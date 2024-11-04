@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="../css/style.css" rel="stylesheet" type="text/css">
+	<title>алг задача 2</title>
+	<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+<header>
+
+<div class ="logo"><a href="../index.html"> <img class="image" src="../img/photoheaderleft.jpg"></a></div>
+
+<div class="Brend"> <span class ="title">STRAY   KIDS</span></div>
+
+<nav class="dws-menu2">
+    <ul>
+    	<li><span><img class="image2" src="../img/photoheaderright.jpg"></span>
+    	<ul class="">
+	        <li><a href="../str2/career.html">Карьера</a></li>
+	        <li><a href="../str3/discography.html">Дискография</a></li>
+	        <li><a href="../str4/filmography.html">Фильмография</a></li>
+	        <li><a href="../str5/albums.html">Альбомы</a></li>
+	        <li><a href="../str6/store.html">Корзина</a></li>
+	        <li><a href="https://en.thejypshop.com/straykids.html" target="_blank">Интернет магазин</a></li>
+        </ul>
+        </li>
+    </ul>
+</nav>
+</header>
+
+<content>
+	<nav class="dws-menu">
+	<ul>
+		<li><a href="../str2/career.html">Карьера</a></li>
+		<li><a href="../str3/discography.html">Дискография</a></li>
+		<li><a href="../str4/filmography.html">Фильмография</a></li>
+		<li><a href="../str5/albums.html">Альбомы</a></li>
+		<li><a href="../str6/store.html">Корзина</a></li>
+		<li><a href="https://en.thejypshop.com/straykids.html" target="_blank">Интернет магазин</a></li>
+		<li><span class=""><b>доп пункты меню</b></span>
+			<ul class="">
+				<li><a href="../str7/passport.html">паспорт</a></li>
+				<li><a href="../str8/changing.html">изменение по событию</a></li>
+				<li><a href="../str9/algtask1.html">алг задача 1</a></li>
+				<li><a href="../str10/algtask2.html"><b>алг задача 2</b></a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+
+<br>
+<br>
+<br>
+
+<div class="passpoooooortinf">
+        <p>Дано вещественное число A. Вычислить x = 0 при a > 100; x = a при a < 61, в противном случае x = a**4.</p>
+</div>
+
+
+<h1 align="center">Решение алгоритмической задачи 2</h1>
+    <div class="passpoooooortinf">
+        <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+    	    <ul>
+    		    <li>Для поисковика: <input name="q" value="search"></li>
+                <li>Формулировка задачи: <br><textarea cols="105" id="task" name="formulation">Дано вещественное число A. Вычислить x = 0 при a > 100; x = a при a < 61, в противном случае x = a**4.</textarea></li>
+                <li>Вещественное число А: <input id="numbeeer" type="number" value="83"></li>
+                <li>Результат решения: <input id="result" name="result" value="не определено"></li>
+                <li>действие 1: <input id="verify" type="button" value="Проверить"></li>
+                <li>действие 2: <input id="send" type="button" value="Отправить"></li>
+    	    </ul>
+        </form>
+    </div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</content>
+</body>
+
+
+<script>
+    document.getElementById('verify').onclick = function() {
+        const a = parseFloat(document.getElementById('numbeeer').value);
+        let x;
+
+        if (a > 100) {
+            x = 0;
+        } else if (a < 61) {
+            x = a;
+        } else {
+            x = Math.pow(a, 4);
+        }
+
+        document.getElementById('result').value = x;
+    }
+
+    document.getElementById("send").onclick = function send() {
+        document.getElementsByName('result')[0].value = result;
+        document.getElementById("UserEnter").submit();
+    }
+</script>
+
+</html>
+
+
+
+
